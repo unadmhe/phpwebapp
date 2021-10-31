@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<!--  declaramos el inicio del encabezado -->
+<head>
+<!-- Definimos el juego de caracteres de la página a UTF-8  -->
+<meta charset="UTF-8" />
+<!-- definimos algunos metadatos --> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- definimos la hoja de estilo CSS en el documento style.css--> 
+<link href="style.css" rel="stylesheet">
+<!-- terminamos el encabezado  -->
+</head>
+<!-- iniciamos el cuerpo del documento  -->
+<body>
+<!-- iniciamos la declaracion de una lista de bullets  para el menú superior-->
+<ul>
+<!--  declaramos los elementos del menú como bullets con ligas -->
+  <li><a href="index.html">Nosotros</a></li>
+  <li><a href="clientes.html">Clientes</a></li>
+  <!-- declaramos un elemento de clase dropdown para el menú desplegable  -->
+  <li class="dropdown">
+  <!--  declaramos un elemento de clase dropbtn para el encabezado del menú desplegable -->
+    <a href="javascript:void(0)" class="dropbtn">Asesores</a>
+	<!-- insertamos una división para el contenido del menú desplegable  -->
+    <div class="dropdown-content">
+	<!--  declaramos los elementos del menú desplegable como bullets -->
+      <a href="asesorcuentas.html">Asesor de Cuentas</a>
+      <a href="asesorseguros.html">Asesor de Seguros</a>
+      <a href="asesorahorros.html">Asesor de Ahorros</a>
+	  <!-- terminamos la división del menú desplegable  -->
+    </div>
+	<!-- terminamos el bullets que contiene el menú desplegable  -->
+  </li>
+ <!-- agregamos otros bullets con referencias o ligas al menú superior  -->
+  <li><a href="sucursales.html">Sucursales</a></li>
+  <li><a class="active" href="empleados.html">Empleados</a></li>
+  <!-- terminamos la lista de bullets  --> 
+</ul>
+<!-- Mostramos un texto descriptivo  --> 
+<h2>Empleados</h2>
+
+<p>Lista de empleados.</p>
+
+<!-- definimos una tabla con la lista de empleados--> 
+<table>
+  <tr>
+    <th>Código</th>
+    <th>Nombre</th>
+    <th>Apellido paterno</th>
+    <th>Apellido materno</th>
+	<th>Dirección</th>
+	<th>Teléfono</th>
+	<th>E-mail</th>
+  </tr>
+  <tr>
+    <td>1001</td>
+    <td>Pedro Hugo</td>
+    <td>Abascal</td>
+    <td>Estancia</td>
+    <td>Calle 1 #2465</td>
+    <td>12345678</td>
+    <td>peter23@gmail.ccm</td>
+  </tr>
+  
+  <tr>
+     <td>1002</td>
+    <td>Elizabeth</td>
+    <td>Samarripa</td>
+    <td>Nuñez</td>
+    <td>Calle Sur #1369</td>
+    <td>6732345678</td>
+    <td>maria456@gmail.ccm</td>
+  </tr>
+  
+    <tr>
+	<td>1003</td>
+    <td>Aarón</td>
+    <td>Zepeda</td>
+    <td>Ibarra</td>
+    <td>Calle Norte #1369</td>
+    <td>8922345478</td>
+    <td>also123@gmail.ccm</td>
+  </tr>
+
+    <tr>
+	<td>1004</td>
+    <td>Luis</td>
+    <td>Abasolo</td>
+    <td>Gertz</td>
+    <td>Calle Roma #1334</td>
+    <td>2245345478</td>
+    <td>abasolo101@gmail.ccm</td>
+  </tr>
+  
+    <tr>
+	<td>1005</td>
+    <td>Ana</td>
+    <td>Zalazar</td>
+    <td>Iñiguez</td>
+    <td>Topacio #184</td>
+    <td>456722345478</td>
+    <td>anasal23@gmail.ccm</td>
+  </tr>
+<!-- terminamos la tabla--> 
+</table>
+<br>
+<!-- declaramos una forma en una división para el botón de alta de empleados  --> 
+    <div style="overflow: auto; 
+           width: 250px; float: center; " >
+	<!-- esta es la forma -->
+	<form action="altaempleados.php">
+     <button class="button-red" role="button" type="submit" >Alta de empleados</button>
+	 </form>
+	 </div>
+
+<br>
+
+<!--insertamos una división para el texto a pie de página y le damos estilo -->
+    <div style="overflow: auto; float: none; width: 100%">
+	<!-- insertamos una línea horizontal en el documento -->
+      <hr />
+	  <!-- insertamos un parrafo -->
+      <p>
+	  <!-- insertamos un bloque de texto en fuente pequeña -->
+        <small
+          >Autor: Sánchez Álvarez Hector Javier<br />
+          Matricula: ES172011532<br />
+          hector_alvarez@nube.unadmexico.mx
+		  <!-- terminamos el bloque de texto en fuente pequeña -->
+        </small>
+		<!-- terminamos el parrafo  -->
+      </p>
+	  <!--  terminamos la división que contiene el parrafo-->
+    </div>
+
+</body>
+</html>
+
