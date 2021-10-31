@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <!--  declaramos el inicio del encabezado -->
 <head>
